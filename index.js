@@ -50,8 +50,16 @@ class CpfGenerator{
 
 const btnRefresh = document.getElementById("btn-refresh");
 const cpfDisplay = document.getElementById("cpf-display");
+const btnCopy = document.getElementById("btn-copy");
 const cpf = new CpfGenerator();
 
 btnRefresh.addEventListener("click", () => {
     cpfDisplay.textContent = cpf.generator();
+})
+
+btnCopy.addEventListener("click", () => {
+    navigator.clipboard.writeText(cpfDisplay.textContent)
+        .then(() => {
+            alert("CPF copiado!");
+        })
 })

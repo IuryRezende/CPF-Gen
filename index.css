@@ -18,7 +18,7 @@ body{
 }
 
 .container{
-    width: 15rem;
+    width: 14rem;
     height: 4rem;
     display: flex;
     flex-wrap: wrap;
@@ -30,8 +30,7 @@ body{
 .container button{
     width: 2rem;
     height: 2rem;
-    margin-left: 10px;
-    background-color: white;
+    background-color: whitesmoke;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -45,7 +44,7 @@ body{
 
 #cpf-display{
     height: 2rem;
-    width: 80%;
+    width: 10rem;
     padding: 10px;
     font-weight: 500;
     color: darkblue;
@@ -54,4 +53,9 @@ body{
     justify-content: flex-start;
     align-items: center;
     border-radius: 5px;
+}
+
+#btn-copy{
+    position: relative;
+    left: -10%;
 }
